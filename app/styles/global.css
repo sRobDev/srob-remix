@@ -1,0 +1,36 @@
+:root {
+  --accent: #4285F4;
+  --marked: #4285F4;
+}
+
+header {
+  padding: 0 .5rem;
+  border: none;
+}
+
+header a {
+  margin: 0 1rem;
+  border: none;
+}
+
+footer svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+footer a {
+  margin: 0 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 1rem 1rem;
+}
+
+li a {
+  text-decoration: none;
+  color: inherit;
+}
