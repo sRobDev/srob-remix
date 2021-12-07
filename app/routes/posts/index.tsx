@@ -9,18 +9,19 @@ interface Post {
 export const loader: LoaderFunction = () => {
   const posts: Post[] = [
     {
+      title: 'Adding Sass to Remix',
+      link: 'https://www.better.dev/adding-sass-to-remix'
+    },
+    {
       title: 'Adding Tailwind CSS to Remix',
-      slug: null,
       link: 'https://www.better.dev/adding-tailwind-css-to-remix'
     },
     {
       title: 'Introduction to React Prop-Types',
-      slug: null,
       link: 'https://srobdev.hashnode.dev/introduction-to-react-prop-types',
     },
     {
       title: 'TailwindCSS: The Very Basics (Installation + Intellisense)',
-      slug: null,
       link: 'https://srobdev.hashnode.dev/tailwindcss-the-very-basics-installation-intellisense'
     }
   ]
@@ -29,7 +30,6 @@ export const loader: LoaderFunction = () => {
 
 export default function PostsIndex() {
   const posts: any = useLoaderData<Post[]>();
-  console.log('Turbo Console Log ~ file: index.tsx ~ line 25 ~ PostsIndex ~ posts', posts);
   return (
     <div>
       <h2>posts</h2>
