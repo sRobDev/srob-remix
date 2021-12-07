@@ -6,6 +6,17 @@
 header {
   padding: 0 .5rem;
   border: none;
+  display: flex;
+}
+
+header nav {
+  flex: 1;
+}
+
+header svg {
+  margin-top: 9px;
+  height: 3rem;
+  width: 3rem;
 }
 
 header a {
